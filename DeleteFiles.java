@@ -60,10 +60,14 @@ public class DeleteFiles {
                 }
             case 2:
                 try {
-                    int i = Integer.parseInt(lArgs[1]);
-                    quantity = i;
+                    if (lArgs[1].charAt[0].equals(".")) {
+                        fileExtension = lArgs[1];
+                    } eise {
+                        int i = Integer.parseInt(lArgs[1]);
+                        quantity = i;
+                    }
                 } catch (Exception e) {
-                    System.out.println("Quantity not specified in correct format!!");
+                    System.out.println("Quantity or extension not specified in correct format!!");
                     System.exit(1);
                 }
             case 1:
