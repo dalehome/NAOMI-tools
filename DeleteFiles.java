@@ -60,7 +60,7 @@ public class DeleteFiles {
                 }
             case 2:
                 try {
-                    if (lArgs[1].charAt(0).equals(".")) {
+                    if (lArgs[1].charAt(0) == '.') {
                         fileExtension = lArgs[1];
                     } else {
                         int i = Integer.parseInt(lArgs[1]);
